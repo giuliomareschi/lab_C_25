@@ -1,0 +1,47 @@
+# Ignora tutti gli eseguibili senza estensione (tipici file compilati C su Mac/Linux)
+*
+!*/
+!*.*
+
+# Ignora i file oggetto
+*.o
+*.obj
+
+# Ignora file generati da VSCode
+.vscode/
+*.dSYM/
+.DS_Store
+
+# Ignora i file di backup
+*~
+*.swp
+*.swo
+
+# Ignora file di compilazione specifici
+*.out
+*.exe
+*.app
+*.dll
+*.so
+*.dylib
+
+# Ignora i file temporanei
+*.tmp
+*.temp
+
+# Ignora i file di debug
+*.pdb
+*.ilk
+*.log
+*.tlog
+
+# Ignora i file di configurazione locali
+.idea/
+*.xcodeproj/
+*.xcworkspace/
+
+# Ignora file specifici di macOS
+.AppleDouble
+.LSOverride
+Icon
+._*
