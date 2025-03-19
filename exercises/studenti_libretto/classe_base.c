@@ -3,9 +3,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define VOLTE 2
 #define WORD_L 20
+#define MAX_MATRICOLA 10000
 
 typedef struct{
     unsigned short int giorno;
@@ -23,7 +25,7 @@ typedef struct {
 } studente;
 
 int main (void){
-    int seed = 2;
+    int seed = time(NULL);
     srand(seed);
 
     printf("-- ES. 2\n-- CLASSE LIBRETTO\n-- Giulio Mareschi\n\n"); //intestazione
@@ -62,9 +64,11 @@ int main (void){
         }
 
         while (classe[i].matricola <= 0){
-            printf("Inserire matricola: ");
-            scanf("%hu", &classe[i].matricola);
-            if (classe[i].matricola <= 0) puts("[!] MATRICOLA NON VALIDA");
+        printf("Inserire matricola, 0 per random: ");
+        scanf("%hu", &classe[i].matricola);
+        if (classe[i].matricola == 0) {
+            classe[i].matricola = 1 + rand() % MAX_MATRICOLA;
+        } else if (classe[i].matricola < 0) puts("[!] MATRICOLA NON VALIDA");
         }
         
         //generazione del libretto
