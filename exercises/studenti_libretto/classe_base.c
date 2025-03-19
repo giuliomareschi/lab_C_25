@@ -34,11 +34,14 @@ int main (void){
 
     //ciclo studenti
     for (int i = 0; i < VOLTE; i++){
+
         //input dati utente
         printf("STUDENTE %d/%d\n", i+1, VOLTE);
+
         //input nome completo
         printf("Inserire nome e cognome: ");
         scanf("%s%s", classe[i].nome, classe[i].cognome);
+
         //input data
         while(classe[i].nascita.giorno <= 0 || classe[i].nascita.mese <= 0 || classe[i].nascita.anno <= 0){
             printf("Inserire data di nascita (formato gg-mm-aaaa): ");
@@ -57,6 +60,7 @@ int main (void){
                 } else puts ("[!] DATA NON VALIDA");
             } else puts ("[!] DATA NON VALIDA");
         }
+
         while (classe[i].matricola <= 0){
             printf("Inserire matricola: ");
             scanf("%hu", &classe[i].matricola);
@@ -89,6 +93,7 @@ int main (void){
     
     puts("");
     
+    //contatore_voti
     printf("VOTO | VOLTE\n");
 
     for (int i = 0; i < 14; i++){
