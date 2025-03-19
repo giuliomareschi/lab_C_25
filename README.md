@@ -12,8 +12,7 @@ Laboratorio_C_2025_Giulio_Mareschi/
 ├── exercises/             # Esercizi più semplici e compiti
 │   └── classroom/         # Esercizi svolti in aula
 ├── libraries/             # Componenti riutilizzabili
-│   ├── data_validation/   # Funzioni per la validazione dei dati
-│   └── scan_utils/        # Utilità per l'input
+│   └── data_validation/   # Funzioni per la validazione dei dati
 └── tests/                 # File di test e dimostrazione
 ```
 
@@ -21,7 +20,7 @@ Laboratorio_C_2025_Giulio_Mareschi/
 
 ### Battaglia Navale
 
-Un gioco di battaglia navale che si gioca nel terminale. Il giocatore deve indovinare la posizione delle navi nemiche nascoste in una griglia. [Maggiori dettagli](./projects/naval_battle/README.md)
+Un gioco di battaglia navale che si gioca nel terminale. Il giocatore deve indovinare la posizione delle navi nemiche nascoste in una griglia. [Maggiori dettagli](./projects/battaglia_navale/README.md)
 
 ### [Altri progetti...]
 
@@ -36,6 +35,6 @@ Un gioco di battaglia navale che si gioca nel terminale. Il giocatore deve indov
 
 **Giulio Mareschi**
 
-## Note sul corso
+## Note
 
 Questo repository raccoglie il lavoro svolto durante il corso di Laboratorio di Programmazione in C. Gli esercizi e i progetti sono ordinati in base alla complessità e agli argomenti trattati durante le lezioni.

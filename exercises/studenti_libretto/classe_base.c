@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 #define VOLTE 2
+#define WORD_L 20
 
 typedef struct{
     unsigned short int giorno;
@@ -13,8 +14,8 @@ typedef struct{
 } data;
 
 typedef struct {
-    char nome [10];
-    char cognome[10];
+    char nome [WORD_L];
+    char cognome[WORD_L];
     data nascita;
     unsigned short int matricola;
     unsigned short int libretto [20];
@@ -35,15 +36,12 @@ int main (void){
     for (int i = 0; i < VOLTE; i++){
         //input dati utente
         printf("STUDENTE %d/%d\n", i+1, VOLTE);
-        //input nome
-        printf("Inserire nome (max 9 caratteri): ");
-        scanf("%9s", classe[i].nome);
-        //input cognome
-        printf("Inserire cognome (max 9 caratteri): ");
-        scanf("%9s", classe[i].cognome);
+        //input nome completo
+        printf("Inserire nome e cognome: ");
+        scanf("%s%s", classe[i].nome, classe[i].cognome);
         //input data
         while(classe[i].nascita.giorno <= 0 || classe[i].nascita.mese <= 0 || classe[i].nascita.anno <= 0){
-            printf("Inserire data (formato gg/mm/aaaa): ");
+            printf("Inserire data di nascita (formato gg-mm-aaaa): ");
             char input_data [11] = {""};
             scanf("%10s", input_data);
 
