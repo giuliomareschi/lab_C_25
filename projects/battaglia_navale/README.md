@@ -50,7 +50,7 @@ Questo gioco simula la battaglia navale con navi di dimensione |1|.
 ...
 
 Inserire coordinate: B5
-[!] NAVE AFFONDATA!
+[^] NAVE AFFONDATA!
 ```
 
 ## Autore
