@@ -148,11 +148,11 @@ void game(int col_mare, int rig_mare, int mare[][col_mare], int turni, int *affo
         
     switch (mare[g_rig][g_col]){
         case 2:
-        puts("[!] NAVE MANCATA");
+        puts("[^] NAVE MANCATA");
         break;
 
         case 3:
-        puts("[!] NAVE AFFONDATA!");
+        puts("[^] NAVE AFFONDATA");
         (*affondate)++;
         break;
     }
